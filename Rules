@@ -1,0 +1,77 @@
+Target attribute is: grade
+	if F is A ,then [A-83.80%;notA-16.20%;]
+		if M4 is notA ,then [A-75.00%;notA-25.00%;]
+			if M2 is notA ,then [A-59.09%;notA-40.91%;]
+				if P2 is A ,then [A-68.42%;notA-31.58%;]
+					if M1 is notA ,then [A-47.83%;notA-52.17%;]
+						if M3 is A ,then [A-71.43%;notA-28.57%;]
+							if M5 is A ,then [A-90.91%;notA-9.09%;]
+								if P1 is A ,then grade is A for 100.00% -
+								if P1 is notA ,then [A-66.67%;notA-33.33%;]
+									if P3 is A ,then grade is A for 100.00% -
+									if P3 is notA ,then grade is notA for 100.00% -
+							if M5 is notA ,then grade is notA for 100.00% -
+						if M3 is notA ,then [notA-88.89%;A-11.11%;]
+							if P3 is notA ,then grade is notA for 100.00% -
+							if P3 is A ,then [A-33.33%;notA-66.67%;]
+								if P1 is A ,then grade is A for 100.00% -
+								if P1 is notA ,then grade is notA for 100.00% -
+					if M1 is A ,then grade is A for 100.00% -
+				if P2 is notA ,then grade is notA for 100.00% -
+			if M2 is A ,then [A-92.50%;notA-7.50%;]
+				if P1 is notA ,then [A-80.00%;notA-20.00%;]
+					if M5 is A ,then [A-88.89%;notA-11.11%;]
+						if M1 is A ,then grade is A for 100.00% -
+						if M1 is notA ,then [A-75.00%;notA-25.00%;]
+							if P3 is A ,then grade is A for 100.00% -
+							if P3 is notA ,then [A-50.00%;notA-50.00%;]
+								if P4 is A ,then grade is A for 100.00% -
+								if P4 is notA ,then grade is notA for 100.00% -
+					if M5 is notA ,then grade is notA for 100.00% -
+				if P1 is A ,then [A-96.67%;notA-3.33%;]
+					if M5 is A ,then grade is A for 100.00% -
+					if M5 is notA ,then [A-88.89%;notA-11.11%;]
+						if P3 is A ,then grade is A for 100.00% -
+						if P3 is notA ,then [A-66.67%;notA-33.33%;]
+							if P4 is A ,then grade is A for 100.00% -
+							if P4 is notA ,then [notA-50.00%;A-50.00%;]
+								if P2 is A ,then grade is notA for 100.00% -
+								if P2 is notA ,then grade is A for 100.00% -
+		if M4 is A ,then [A-96.55%;notA-3.45%;]
+			if P1 is notA ,then [A-88.24%;notA-11.76%;]
+				if M1 is notA ,then [A-77.78%;notA-22.22%;]
+					if P3 is notA ,then [A-50.00%;notA-50.00%;]
+						if M5 is A ,then [A-66.67%;notA-33.33%;]
+							if M3 is A ,then grade is A for 100.00% -
+							if M3 is notA ,then grade is notA for 100.00% -
+						if M5 is notA ,then grade is notA for 100.00% -
+					if P3 is A ,then grade is A for 100.00% -
+				if M1 is A ,then grade is A for 100.00% -
+			if P1 is A ,then grade is A for 100.00% -
+	if F is notA ,then [notA-72.41%;A-27.59%;]
+		if M2 is A ,then [notA-53.57%;A-46.43%;]
+			if M4 is notA ,then [notA-66.67%;A-33.33%;]
+				if P2 is notA ,then grade is notA for 100.00% -
+				if P2 is A ,then [notA-53.33%;A-46.67%;]
+					if P4 is notA ,then [notA-66.67%;A-33.33%;]
+						if M5 is notA ,then grade is notA for 100.00% -
+						if M5 is A ,then [notA-55.56%;A-44.44%;]
+							if M3 is A ,then [notA-33.33%;A-66.67%;]
+								if P1 is notA ,then [notA-66.67%;A-33.33%;]
+									if P3 is notA ,then grade is notA for 100.00% -
+									if P3 is A ,then grade is A for 100.00% -
+								if P1 is A ,then grade is A for 100.00% -
+							if M3 is notA ,then grade is notA for 100.00% -
+					if P4 is A ,then grade is A for 100.00% -
+			if M4 is A ,then [A-85.71%;notA-14.29%;]
+				if M5 is notA ,then [A-50.00%;notA-50.00%;]
+					if P3 is A ,then grade is A for 100.00% -
+					if P3 is notA ,then grade is notA for 100.00% -
+				if M5 is A ,then grade is A for 100.00% -
+		if M2 is notA ,then [notA-90.00%;A-10.00%;]
+			if M4 is notA ,then grade is notA for 100.00% -
+			if M4 is A ,then [notA-62.50%;A-37.50%;]
+				if P1 is notA ,then grade is notA for 100.00% -
+				if P1 is A ,then [A-75.00%;notA-25.00%;]
+					if M5 is A ,then grade is A for 100.00% -
+					if M5 is notA ,then grade is notA for 100.00% -
