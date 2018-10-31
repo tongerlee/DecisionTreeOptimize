@@ -5,7 +5,8 @@ void predict()
 {
     char ip_file[200];
     char str[100];
-	char **line;
+    int div = 81349789;
+    int *line;
     FILE *fp;
 	int i,j;
 	printf("Enter 1 to test or any other key to exit:");
@@ -30,10 +31,10 @@ void predict()
 		exit(EXIT_FAILURE);
     }
 //SKIP HEADER
-	line=(char **)malloc(g_column_count*sizeof(char *));
+	line=(int *)malloc(g_column_count*sizeof(int));
 	for (i=0;i<g_column_count;i++)
 	{
-		line[i]=(char *)malloc(100*sizeof(char));
+		//line[i]=(int *)malloc(100*sizeof(int));
 		fscanf(fp, "%s", str);
 		fprintf(t_op,"%s ",str);
 		printf("%s ",str);
@@ -46,14 +47,27 @@ void predict()
 	{
 		fprintf(t_op,"%s ",str);
 		printf("%s ",str);
-		strcpy(line[0],str);
+		//strcpy(line[0],str);
+		int res = 0;
+        int z = 0;
+		for (z = 0; z < strlen(str); z++){
+			res = res * 128 + (int) str[z];
+			res = res % div;
+		}
+		line[0] = res;
 //LOOP ON COLUMNS
 		for (i=1;i<g_column_count;i++)
 		{
 			fscanf(fp, "%s", str);
 			fprintf(t_op,"%s ",str);
 			printf("%s ",str);
-			strcpy(line[i],str);
+			//strcpy(line[i],str);
+			res = 0;
+                        for (z = 0; z < strlen(str); z++){
+                        	res = res * 128 + (int) str[z];
+                        	res = res % div;
+                	}
+                	line[i] = res;
 		}
 //START TRAVERSAL FROM ROOT
 		if (navigate(line,root))
